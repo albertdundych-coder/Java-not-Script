@@ -8,6 +8,10 @@ public class main {
     System.out.println("if 1 means rock");
     System.out.println("if 2 means scisors");
     System.out.println("if 3 means paper");
+    System.out.println("if 4 means botle");
+    System.out.println("if 5 means toy");
+    System.out.println("botle wins paper");
+    System.out.println("toy wins all but not rock");
     System.out.println("your turn!");
 
     int myChoice = scanner.nextInt();
@@ -31,8 +35,34 @@ public class main {
     } else if (compChoice ==3 && myChoice ==1) {
         System.out.println("Computer won");
 
-    } else  {
+    } else if (compChoice ==1 && myChoice ==3) {
+        System.out.println("you won");
+
+    } else if (compChoice ==4 && myChoice ==3) {
         System.out.println("Computer won");
+
+    } else if (compChoice ==3 && myChoice ==4) {
+        System.out.println("you won");
+
+    } else if (compChoice ==5 && myChoice ==1) {
+        System.out.println("you won");
+
+    } else if (compChoice ==1 && myChoice ==5) {
+        System.out.println("Computer won");
+
+
+
+    } else if (compChoice ==5 && myChoice ==2) {
+        System.out.println("Computer won");
+
+    } else if (compChoice ==5 && myChoice ==3) {
+        System.out.println("Computer won");
+
+    } else if (compChoice ==5 && myChoice ==4) {
+        System.out.println("Computer won");
+
+    } else  {
+        System.out.println("you won");
     }
 
     }
